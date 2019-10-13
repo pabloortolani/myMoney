@@ -45,15 +45,9 @@ function App() {
   return (
     <Router>
       <div>
-        
         <Header />
         <Route path="/" exact component={Home} />
         <Route path="/movimentacoes/:data" component={Movimentacoes} />
-        {/*JSON.stringify(data2)*/}
-        <button onClick={saveNew}>Salvar</button>
-        {/*JSON.stringify(postData)*/}
-        <button onClick={doRemove}>Delete</button>
-        {/*JSON.stringify(deleteData)*/}
       </div>
     </Router>
   );

@@ -4,6 +4,8 @@ import Header from './elements/Header';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Home from './pages/Home/';
 import Movimentacoes from './pages/Movimentacoes'
+import Login from './pages/login';
+import Meses from './pages/Home/Meses';
 /*
 axios
 .get('https://mymoney-pablo.firebaseio.com/valor.json')
@@ -47,7 +49,9 @@ function App() {
       <div>
         <Header />
         <Route path="/" exact component={Home} />
+        <Route path="/meses" component={Meses} />
         <Route path="/movimentacoes/:data" component={Movimentacoes} />
+        <Route path="/login" exact component={Login} />
       </div>
     </Router>
   );
